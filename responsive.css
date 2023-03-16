@@ -1,0 +1,104 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    /** Header **/
+    .header-left {
+        font-size: smaller;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-right a {
+        color: white;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /** Main **/
+    .top-wrapper h1 {
+        font-size: 32px;
+    }
+
+    /** Body **/
+    .film {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    /** Form **/
+    .contact-detail {
+        gap: 24px;
+    }
+
+    form h1 {
+       font-size: 24px; 
+    }    
+
+    form h2 {
+        font-size: 18px;
+    }
+}
+  
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    /** Header **/
+    .header-left {
+        font-size: smaller;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /** Main **/
+    .btn {
+        width: 100%;
+    }
+    
+    .facebook {
+        margin-bottom: 10px;
+    }
+    
+    .top-wrapper {
+        text-align: left;
+    }
+    
+    .top-wrapper h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .top-wrapper p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /** Body **/
+    .film {
+        width: 100%;
+    }
+    
+    .top-wrapper {
+        text-align: left;
+    }
+
+    /** Form **/
+    form h1 {
+        font-size: 18px;
+    }
+
+    form h2 {
+        font-size: 12;
+    }
+}

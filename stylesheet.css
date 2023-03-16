@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+/** Header **/ 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    padding-right: 3px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.logo {
+    font-family: Raleway;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.header-right a:hover {
+    color: #ccc;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.header-menu a:hover {
+    background-color: grey;
+    padding: 12px 16px;
+    color: black;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-search input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.header-search button[type="submit"] {
+    padding: 6px 12px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.header-search button[type="submit"]:hover {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header-login a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.header-login a:hover {
+    color: white;
+    background-color: grey;
+    padding: 12px 16px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+/* Style untuk dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: #191d26;
+    background-color: rgb(169, 167, 167);
+    padding-right: 16px;
+}
+
+/** Main **/
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://akcdn.detik.net.id/visual/2018/04/12/418b52e5-01ed-4935-9f24-34d2b912b494_169.jpeg?w=650);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    opacity: 0.8;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.top-wrapper h3 {
+    opacity: 0.8;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper p {
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-wrapper p {
+    margin: 10px 0;
+}
+
+.signup {
+    background-color: #239b76;
+}
+
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+
+.google {
+    background-color:firebrick;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+/** Body **/
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.film-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    text-align: center;
+}
+
+.txt-title {
+    color: white;
+}
+
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.heading h2 {
+    font-weight: normal;
+}
+
+.film {
+    float: left;
+    width: 25%;
+}
+
+.film-icon {
+    position: relative;
+}
+
+.film-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+
+.film-icon .img-width {
+    max-width: 220px;
+}
+
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+/** Form **/
+
+form {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 64px 32px ;
+}
+ 
+form h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form h2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+form button {
+    border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.form-group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label{
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+.btn-submit:hover {
+    opacity: 1;
+}
+
+.btn-submit {
+    padding: 15px 40px;
+    background-color: #fefefe;
+    cursor: pointer;
+    box-shadow: 0 7px #737875;
+}
+
+.btn-submit:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/** Footer **/
+footer{
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    background: #1f1f1f;
+    height: auto;
+    width: 100%;
+    font-family: Raleaway;
+    padding-top: 40px;
+    color: #f4eeee;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-family: Raleway;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 48px 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 18px;
+}
+.socials a:hover i{
+    color: rgb(246, 70, 17)
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+.footer-bottom span{
+    opacity: 0.6;
+    font-weight: 200;
+}
+    
